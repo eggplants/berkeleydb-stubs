@@ -1,10 +1,18 @@
-from . import db as db
 from collections.abc import MutableMapping
 from typing import Any
 
+from . import db as db
+
 HIGHEST_PROTOCOL: Any
 
-def open(filename, flags=..., mode: int = ..., filetype=..., dbenv: Any | None = ..., dbname: Any | None = ...): ...
+def open(
+    filename,
+    flags=...,
+    mode: int = ...,
+    filetype=...,
+    dbenv: Any | None = ...,
+    dbname: Any | None = ...,
+): ...
 
 class DBShelveError(db.DBError): ...
 

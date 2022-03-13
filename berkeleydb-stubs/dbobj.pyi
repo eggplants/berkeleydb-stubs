@@ -1,5 +1,6 @@
-from . import db as db
 from collections.abc import MutableMapping
+
+from . import db as db
 
 class DBEnv:
     def __init__(self, *args, **kwargs) -> None: ...

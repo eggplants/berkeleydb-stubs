@@ -1,1 +1,1 @@
-from ._berkeleydb import *  # type: ignore[import]
+from ._berkeleydb import *
