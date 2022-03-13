@@ -31,6 +31,38 @@ class _DBWithCursor(_iter_mixin):
     def last(self): ...
     def sync(self): ...
 
-def hashopen(file, flag: str = ..., mode: int = ..., pgsize: Any | None = ..., ffactor: Any | None = ..., nelem: Any | None = ..., cachesize: Any | None = ..., lorder: Any | None = ..., hflags: int = ...): ...
-def btopen(file, flag: str = ..., mode: int = ..., btflags: int = ..., cachesize: Any | None = ..., maxkeypage: Any | None = ..., minkeypage: Any | None = ..., pgsize: Any | None = ..., lorder: Any | None = ...): ...
-def rnopen(file, flag: str = ..., mode: int = ..., rnflags: int = ..., cachesize: Any | None = ..., pgsize: Any | None = ..., lorder: Any | None = ..., rlen: Any | None = ..., delim: Any | None = ..., source: Any | None = ..., pad: Any | None = ...): ...
+def hashopen(
+    file,
+    flag: str = ...,
+    mode: int = ...,
+    pgsize: Any | None = ...,
+    ffactor: Any | None = ...,
+    nelem: Any | None = ...,
+    cachesize: Any | None = ...,
+    lorder: Any | None = ...,
+    hflags: int = ...,
+): ...
+def btopen(
+    file,
+    flag: str = ...,
+    mode: int = ...,
+    btflags: int = ...,
+    cachesize: Any | None = ...,
+    maxkeypage: Any | None = ...,
+    minkeypage: Any | None = ...,
+    pgsize: Any | None = ...,
+    lorder: Any | None = ...,
+): ...
+def rnopen(
+    file,
+    flag: str = ...,
+    mode: int = ...,
+    rnflags: int = ...,
+    cachesize: Any | None = ...,
+    pgsize: Any | None = ...,
+    lorder: Any | None = ...,
+    rlen: Any | None = ...,
+    delim: Any | None = ...,
+    source: Any | None = ...,
+    pad: Any | None = ...,
+): ...
